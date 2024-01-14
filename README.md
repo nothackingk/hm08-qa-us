@@ -1,10 +1,10 @@
 # Project 8: Task
-    -Automated tests covering the full process of ordering a taxi
+Automated tests covering the full process of ordering a taxi
 
 # Documentation used
 -https://webdriver.io/docs/api/expect-webdriverio/
 
-# project purpose
+# Project purpose
 This project includes 4 test cases and achieves the following:
 automated tests covering the full process of ordering a taxi.
 
@@ -20,10 +20,10 @@ automated tests covering the full process of ordering a taxi.
 # Code style
 -variables used:
     // input
-    codeField: '#code', - card cvv field
-    cardNumber:'#number', -credit card number
-    cardCode: '#code.card-input', - card cvv number
-    messageInput: '#comment', - message to driver
+    codeField: '#code', - card cvv field,
+    cardNumber:'#number', -credit card number,
+    cardCode: '#code.card-input', - card cvv number,
+    messageInput: '#comment', - message to driver,
 
     // Buttons
     supportiveCarType: 'div=Supportive',
