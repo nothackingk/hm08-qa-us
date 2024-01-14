@@ -11,14 +11,15 @@ automated tests covering the full process of ordering a taxi.
     -Setting the address
     -Selecting Supportive plan
     -Filling in the phone number
-    -Adding a credit card (Tip: the “link” button doesn’t become active until the card CVV field on the “Adding a card” modal id=”code” class=”card-input” loses focus. To change -focus you can simulate the user pressing TAB or clicking somewhere else on the screen).
+    -Adding a credit card 
     -Writing a message for the driver
-    -Ordering a Blanket and handkerchiefs (Tip: there are two selectors to be aware of here. One selector to click on and one to run expect on to verify that the state changed).
+    -Ordering a Blanket and handkerchiefs
     -Ordering 2 Ice creams
     -The car search modal appears
 
 # Code style
--variables used:
+variables used:
+
     // input
     codeField: '#code', - card cvv field,
     cardNumber:'#number', -credit card number,
