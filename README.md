@@ -1,6 +1,5 @@
-#Project 8: Task
-
-#Automated tests covering the full process of ordering a taxi
+# Project 8: Task
+    -Automated tests covering the full process of ordering a taxi
 
 # Documentation used
 -https://webdriver.io/docs/api/expect-webdriverio/
