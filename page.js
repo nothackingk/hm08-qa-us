@@ -18,6 +18,7 @@ module.exports = {
     linkCardButton: 'button=Link',
     closePaymentButton : '.payment-picker .close-button',
     BlanketHandkerchiefsButton : '.slider',
+    BlanketHandkerchiefsSwitch: '.switch-input',
     iceCreamCounter: '.counter-plus',
     iceCreamCounterDisabled: '.counter-plus.disabled',
     submitCarOrder: '.smart-button',

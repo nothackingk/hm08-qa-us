@@ -71,7 +71,7 @@ describe('Create an order', () => {
         const BlanketHandkerchiefsButton = await $(page.BlanketHandkerchiefsButton);
         await BlanketHandkerchiefsButton.waitForDisplayed();
         await BlanketHandkerchiefsButton.click();
-        await expect(BlanketHandkerchiefsButton).toBeChecked();
+        await expect($(page.BlanketHandkerchiefsSwitch).toBeChecked());
     })
 
     it('should order 2 ice creams ', async () => {
@@ -80,7 +80,7 @@ describe('Create an order', () => {
         await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
 
         await page.addIceCreamOrder();
-        await expect(page.addIceCreamOrder).toBeChecked();
+        await expect($(page.iceCreamCounterDisabled).toBeSelected());
     })
 
     it('should order the car ', async () => {
