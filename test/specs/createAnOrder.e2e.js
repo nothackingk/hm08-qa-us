@@ -16,6 +16,7 @@ describe('Create an order', () => {
         //call the taxi to the address
         await browser.url(`/`)
         await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
+        await expect($(page.fromField)).toHaveValue('East 2nd Street, 601');
     }) 
 
     it('should select supportive mode ', async () => {
@@ -59,6 +60,7 @@ describe('Create an order', () => {
         const messageInput = await $(page.messageInput);
         await messageInput.waitForDisplayed();
         await messageInput.setValue("Hello");
+        await expect(messageInput).toHaveValue("Hello");
     })
 
     it('should select Blanket and Handkerchiefs ', async () => {
@@ -69,7 +71,7 @@ describe('Create an order', () => {
         const BlanketHandkerchiefsButton = await $(page.BlanketHandkerchiefsButton);
         await BlanketHandkerchiefsButton.waitForDisplayed();
         await BlanketHandkerchiefsButton.click();
-        await expect(BlanketHandkerchiefsButton).toBeEnabled();
+        await expect(BlanketHandkerchiefsButton).toBeChecked();
     })
 
     it('should order 2 ice creams ', async () => {
@@ -78,6 +80,7 @@ describe('Create an order', () => {
         await page.fillAddresses('East 2nd Street, 601', '1300 1st St');
 
         await page.addIceCreamOrder();
+        await expect(page.addIceCreamOrder).toBeChecked();
     })
 
     it('should order the car ', async () => {
@@ -88,13 +91,8 @@ describe('Create an order', () => {
         const submitCarOrder = await $(page.submitCarOrder);
         await submitCarOrder.waitForDisplayed();
         await submitCarOrder.click();
-    })
-
-    it('browser pause for car order details ', async () => {
-        //browser pause
-        await browser.pause(30000);
+        await expect(submitCarOrder).toBeEnabled();
     })
 
     
 })
-

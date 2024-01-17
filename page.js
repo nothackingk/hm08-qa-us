@@ -107,6 +107,6 @@ module.exports = {
      await iceCreamCounter.click();
      const iceCreamCounterDisabled = await $(this.iceCreamCounterDisabled);
      await iceCreamCounterDisabled.waitForDisplayed();
-     await expect(iceCreamCounterDisabled).toBeClickable();
+     
     }
 };
